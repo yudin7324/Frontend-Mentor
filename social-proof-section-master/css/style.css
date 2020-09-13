@@ -1,0 +1,268 @@
+:root {
+  --main-Very-Dark-Magenta: hsl(300, 43%, 22%);
+  --main-Soft-Pink: hsl(333, 80%, 67%);
+  --main-Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+  --main-Light-Grayish-Magenta: hsl(300, 24%, 96%);
+  --main-White: hsl(0, 0%, 100%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+body {
+  background: #b6b0b4;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  font-size: 15px;
+  font-family: "Spartan", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+.content {
+  background-color: #fff;
+  max-width: 1440px;
+  margin: 60px auto;
+  padding-bottom: 1px;
+  background-image: url(../images/bg-pattern-bottom-desktop.svg);
+  background-position: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+}
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url(../images/bg-pattern-top-desktop.svg);
+  background-position: -120px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-top: 100px;
+  margin-bottom: 60px;
+}
+.main-title {
+  min-width: 55%;
+}
+.main-title h1 {
+  font-size: 40px;
+  font-weight: 700;
+  padding-right: 250px;
+  margin-bottom: 10px;
+  color: var(--main-Very-Dark-Magenta);
+  line-height: 1;
+}
+
+.main-title p {
+  font-size: 15px;
+  color: var(--main-Very-Dark-Magenta);
+  line-height: 1.7;
+  padding-right: 160px;
+}
+
+.rated {
+  min-width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rated div:nth-of-type(1) {
+  align-self: flex-start;
+}
+.rated div:nth-of-type(2) {
+  align-self: center;
+}
+
+.rated div:nth-of-type(3) {
+  align-self: flex-end;
+  margin-bottom: 0;
+}
+
+.rated-row {
+  background-color: var(--main-Light-Grayish-Magenta);
+  padding: 15px 0;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  justify-content: start;
+  display: flex;
+  min-width: 465px;
+}
+
+.rated-row__stars {
+  display: flex;
+  padding-left: 30px;
+}
+.rated-row__stars img {
+  padding-left: 5px;
+}
+
+.rated-row__text {
+  color: var(--main-Very-Dark-Magenta);
+  font-weight: 700;
+  text-align: center;
+  padding-left: 40px;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  min-height: 330px;
+  margin-bottom: 80px;
+}
+
+.card {
+  background-color: var(--main-Very-Dark-Magenta);
+  width: 31.5%;
+  border-radius: 10px;
+  min-height: 280px;
+  padding: 40px;
+}
+.bottom div:nth-of-type(1) {
+  align-self: start;
+}
+.bottom div:nth-of-type(2) {
+  align-self: center;
+}
+.bottom div:nth-of-type(3) {
+  align-self: flex-end;
+}
+
+.card-item {
+  display: flex;
+  margin-bottom: 40px;
+  align-items: center;
+}
+.card-photo {
+  height: auto;
+  max-width: 50px;
+  border-radius: 50%;
+  margin-right: 30px;
+}
+.card-name {
+  font-weight: 500;
+  color: var(--main-White);
+  margin-bottom: 5px;
+}
+.card-prof {
+  color: var(--main-Soft-Pink);
+}
+
+.card-text {
+  font-size: 14px;
+  line-height: 1.8;
+  color: var(--main-White);
+}
+
+.attribution {
+  color: #fff;
+  /* margin-left: 100px; */
+  font-weight: 700;
+}
+
+.attribution a {
+  color: rgb(85, 19, 82);
+}
+
+/* Media */
+
+@media (max-width: 500px) {
+  body {
+    background: #ffffff;
+  }
+  .content {
+    max-width: 100%;
+    margin: 0;
+    padding: 0 5px 10px;
+    background-image: url("../images/bg-pattern-bottom-mobile.svg");
+  }
+
+  .top {
+    display: block;
+    text-align: center;
+    padding: 0;
+    background-image: url("../images/bg-pattern-top-mobile.svg");
+    background-position: top;
+  }
+
+  .main-title h1 {
+    padding: 20px 0;
+  }
+
+  .main-title p {
+    padding: 0;
+    margin-bottom: 40px;
+  }
+  .rated {
+    display: block;
+    margin-bottom: 40px;
+  }
+  .rated-row {
+    display: block;
+    padding: 15px 0;
+    margin-bottom: 15px;
+    min-width: auto;
+  }
+  .rated-row__stars {
+    justify-content: center;
+    padding-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .bottom {
+    display: block;
+    margin-bottom: 30px;
+  }
+  .card {
+    width: 100%;
+    min-height: auto;
+    padding: 30px;
+    margin-bottom: 10px;
+  }
+
+  .attribution {
+    margin: 30px 0;
+    text-align: center;
+    color: #333333;
+  }
+}
