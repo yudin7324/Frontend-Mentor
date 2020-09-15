@@ -1,0 +1,277 @@
+:root {
+  --main-PaleBlue: hsl(243, 100%, 93%);
+  --main-Grayish-Blue: hsl(229, 7%, 55%);
+  --main-Dark-Blue: hsl(228, 56%, 26%);
+  --main-Very-Dark-Blue: hsl(229, 57%, 11%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  font-family: "Raleway", sans-serif;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  background-color: var(--main-Very-Dark-Blue);
+  background-image: url(../images/bg-desktop.png);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.wrapper {
+  display: flex;
+  padding: 0 20px;
+}
+
+.logo__container {
+  flex-direction: column;
+  background-color: var(--main-Dark-Blue);
+  padding: 30px 30px;
+  border-radius: 10px;
+  border-top-right-radius: 80px;
+}
+
+.logo {
+  margin-bottom: 30px;
+  margin-right: 100px;
+}
+
+.block {
+  display: flex;
+}
+
+.block__icons {
+  background-color: var(--main-Very-Dark-Blue);
+  display: grid;
+  place-items: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.progress-bar__container {
+  align-self: flex-end;
+  background-color: var(--main-Dark-Blue);
+  border-radius: 10px;
+  padding: 35px 30px;
+  font-size: 14px;
+  margin-left: 25px;
+  width: 500px;
+  position: relative;
+}
+
+.progress-bar__container p {
+  color: var(--main-PaleBlue);
+  margin-bottom: 15px;
+}
+
+.progress-bar__container p span {
+  color: var(--main-PaleBlue);
+  font-weight: 700;
+}
+
+.progress-bar {
+  height: 18px;
+  width: 100%;
+  background-color: rgba(15, 17, 24, 0.5);
+  border-radius: 10px;
+  padding: 2px;
+}
+
+.progress-bar__line:before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(75deg, #ffa399, #ff4d97);
+  left: 0;
+  top: 0;
+}
+.progress-bar__line:after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  width: 10px;
+  right: 2px;
+  bottom: 2px;
+  border-radius: 10px;
+  background: #fff;
+}
+.progress-bar__line {
+  width: 81.5%;
+  height: 100%;
+  min-width: 15px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  -webkit-animation: animate-progress-bar 8s cubic-bezier(0.2, 0.82, 0.2, 1);
+  animation: animate-progress-bar 8s cubic-bezier(0.2, 0.82, 0.2, 1);
+}
+
+.progress-range {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+.progress-range span {
+  color: var(--main-PaleBlue);
+  font-weight: 700;
+}
+
+.tooltip-cloud {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  background-color: #fff;
+  position: absolute;
+  top: -40px;
+  right: 31px;
+
+  padding: 17px 20px;
+  border-radius: 10px;
+}
+
+.tooltip-cloud:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -12px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 20px 20px 0;
+  border-color: transparent #fff transparent transparent;
+}
+
+.tooltip-number {
+  font-size: 30px;
+  font-weight: 700;
+  margin-right: 10px;
+}
+.tooltip-text {
+  color: var(--main-Grayish-Blue);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* Media query */
+
+@media (max-width: 900px) {
+  .progress-bar__container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 670px) {
+  .wrapper {
+    flex-direction: column;
+  }
+
+  .logo__container {
+    margin-bottom: 20px;
+  }
+
+  .progress-bar__container {
+    min-width: 100%;
+    margin-left: 0;
+  }
+
+  .progress-bar__container {
+    padding: 35px 30px 40px;
+  }
+
+  .tooltip-cloud {
+    bottom: -40px;
+    top: auto;
+    left: 65px;
+    right: 70px;
+  }
+
+  .tooltip-cloud:after {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  body {
+    background-image: url(../images/bg-mobile.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .logo {
+    margin-right: 30px;
+  }
+}
