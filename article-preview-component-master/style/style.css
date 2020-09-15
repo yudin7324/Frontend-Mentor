@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+html,
+body {
+  font-family: "Manrope", sans-serif;
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 13px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+:root {
+  --main-Very-Dark-Grayish-Blue: hsl(217, 19%, 35%);
+  --main-Desaturated-Dark-Blue: hsl(214, 17%, 51%);
+  --main-Grayish-Blue: hsl(212, 23%, 69%);
+  --main-Light-Grayish-Blue: hsl(210, 46%, 95%);
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main-Light-Grayish-Blue);
+  min-height: 100vh;
+}
+.container {
+  display: grid;
+  grid-template-columns: 38% 62%;
+  background-color: #fff;
+  max-width: 720px;
+  border-radius: 15px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.inner-title {
+  font-size: 20px;
+  color: var(--main-Very-Dark-Grayish-Blue);
+  font-weight: 700;
+  line-height: 1.2;
+  padding: 40px 40px 10px;
+}
+
+.inner-text {
+  color: var(--main-Desaturated-Dark-Blue);
+  line-height: 1.7;
+  padding: 0 40px;
+  margin-bottom: 20px;
+}
+.inner-frame {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 0 40px;
+  margin-bottom: 20px;
+}
+
+.inner-frame__photo {
+  width: 40px;
+  height: auto;
+  border-radius: 50%;
+}
+.inner-frame__info {
+  padding-left: 15px;
+}
+
+.inner-frame__name {
+  color: var(--main-Very-Dark-Grayish-Blue);
+  font-weight: 700;
+  margin-bottom: 7px;
+}
+.inner-frame__data {
+  color: var(--main-Grayish-Blue);
+}
+
+.inner-frame__share {
+  margin-left: auto;
+}
+
+.button-share {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  color: var(--main-Desaturated-Dark-Blue);
+  background-color: var(--main-Light-Grayish-Blue);
+  transition: 0.3s;
+}
+
+.button-share:hover {
+  color: #fff;
+  background-color: var(--main-Desaturated-Dark-Blue);
+}
+
+.inner-frame__links.hide {
+  display: none;
+}
+
+.inner-frame__links.active {
+  position: absolute;
+  top: -70px;
+  right: -60px;
+  z-index: 10;
+  background-color: var(--main-Very-Dark-Grayish-Blue);
+  padding: 15px 35px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  box-shadow: 6px 5px 22px -7px var(--main-Very-Dark-Grayish-Blue);
+}
+.inner-frame__links.active span {
+  color: var(--main-Grayish-Blue);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  padding-right: 15px;
+  font-size: 11px;
+}
+.inner-frame__links.active i {
+  font-size: 18px;
+  letter-spacing: 10px;
+}
+
+.inner-frame__links.active a {
+  transition: 0.3s;
+  color: #ffffff;
+}
+.inner-frame__links.active a:hover {
+  color: #aea1d1;
+}
+
+.inner-frame__links.active:after {
+  top: 100%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.inner-frame__links.active:after {
+  border-top-color: var(--main-Very-Dark-Grayish-Blue);
+  border-width: 12px;
+  left: 50%;
+  margin-left: -18px;
+}
+
+.attribution {
+  font-size: 20px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Media query */
+
+@media (max-width: 600px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  img {
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 0;
+  }
+  .inner-frame {
+    margin: 40px 0 25px;
+  }
+  .inner-frame__links.active {
+    top: -20px;
+    right: 0;
+    left: 0;
+    padding: 30px 35px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    box-shadow: none;
+  }
+  .inner-frame__links.active span {
+    font-size: 16px;
+  }
+  .inner-frame__links.active i {
+    font-size: 25px;
+  }
+  .inner-frame__links.active a {
+    color: #ffffff;
+    padding-left: 7px;
+  }
+
+  .inner-frame__links.active:after {
+    display: none;
+  }
+
+  .button-share {
+    position: absolute;
+    top: 2px;
+    right: 30px;
+    z-index: 20;
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+  }
+  .button-share i {
+    font-size: 20px;
+    padding-left: 4px;
+  }
+}
