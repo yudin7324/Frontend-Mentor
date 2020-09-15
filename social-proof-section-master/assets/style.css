@@ -35,7 +35,6 @@ dd {
 }
 
 body {
-  background: #b6b0b4;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   font-size: 15px;
@@ -55,14 +54,10 @@ select {
 }
 .content {
   background-color: #fff;
-  max-width: 1440px;
-  margin: 60px auto;
-  padding-bottom: 1px;
   background-image: url(../images/bg-pattern-bottom-desktop.svg);
   background-position: 300px;
   background-size: cover;
   background-repeat: no-repeat;
-  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
 }
 .container {
   margin: 0 auto;
@@ -195,8 +190,8 @@ select {
 }
 
 .attribution {
-  color: #fff;
-  /* margin-left: 100px; */
+  color: #333333;
+  text-align: center;
   font-weight: 700;
 }
 
@@ -262,7 +257,5 @@ select {
 
   .attribution {
     margin: 30px 0;
-    text-align: center;
-    color: #333333;
   }
 }
