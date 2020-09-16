@@ -58,12 +58,19 @@ button::-moz-focus-inner {
   padding: 0;
   border: 0;
 }
+
 a,
 a:visited {
   text-decoration: none;
 }
 a:hover {
   text-decoration: none;
+}
+a:visited,
+a:hover,
+a:active,
+a:focus {
+  background-color: transparent;
 }
 ul li {
   list-style: none;
@@ -185,12 +192,18 @@ main {
   background-repeat: no-repeat;
   background-position: center left 15px;
   background-color: #fff;
+  outline: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
 }
 
 .slick-next {
   background: url(../images/icon-next.svg);
   background-repeat: no-repeat;
   background-position: center right 15px;
+  outline: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
 }
 
 @media (max-width: 1550px) {
