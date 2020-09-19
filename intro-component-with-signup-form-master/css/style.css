@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 16px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-family: "Poppins", sans-serif;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+:root {
+  --main-Red: hsl(0, 100%, 74%);
+  --main-Green: hsl(154, 59%, 51%);
+  --main-Blue: hsl(248, 32%, 49%);
+  --main-Dark-Blue: hsl(249, 10%, 26%);
+  --main-Grayish-Blue: hsl(246, 25%, 77%);
+}
+
+section {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  padding: 0 10rem;
+  background-color: var(--main-Red);
+  background-image: url(../images/bg-intro-desktop.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.headline {
+  width: 50%;
+  color: #ffffff;
+}
+
+.headline__title {
+  font-size: 3em;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  padding-right: 1rem;
+}
+.headline__text {
+  line-height: 1.6;
+  padding-right: 3rem;
+}
+
+.button__free {
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--main-Blue);
+  color: #ffffff;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  margin: 0 0 1.5rem;
+  box-shadow: 0px 7px 0px 0px rgb(226, 105, 105);
+}
+
+.button__free span {
+  font-weight: 300;
+}
+
+.form {
+  text-align: center;
+  padding: 2.3rem;
+  background-color: #fff;
+  width: 30rem;
+  border-radius: 0.5rem;
+  box-shadow: 0px 7px 0px 0px rgb(226, 105, 105);
+}
+.form__control {
+  position: relative;
+  margin-bottom: 1.2rem;
+}
+
+.form__control input {
+  border: 1px solid #dadada;
+  border-radius: 0.25rem;
+  width: 100%;
+  height: 3rem;
+  padding-left: 1.5rem;
+  font-weight: 600;
+  color: var(--main-Dark-Blue);
+}
+.form__control input:focus {
+  border-color: var(--main-Blue);
+  border-width: 0.1rem;
+}
+
+.form input::placeholder {
+  font-weight: 600;
+}
+
+.form__button {
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--main-Green);
+  border-radius: 0.4rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+  box-shadow: 0px 3px 0px 0px rgb(47, 172, 99);
+  margin-bottom: 1rem;
+}
+
+.form__bottom {
+  font-size: 0.6rem;
+  color: var(--main-Grayish-Blue);
+}
+.form__bottom span {
+  color: var(--main-Red);
+  font-weight: 700;
+}
+
+.form__error {
+  position: absolute;
+  top: 0.7rem;
+  right: 1.5rem;
+  visibility: hidden;
+}
+.form__error-text {
+  color: var(--main-Red);
+  font-size: 0.6em;
+  font-style: italic;
+  font-weight: 500;
+  padding: 0.5rem 0;
+  text-align: right;
+  display: none;
+}
+
+.form__control.error input {
+  border: 2px solid var(--main-Red);
+}
+.form__control.error .form__error {
+  visibility: visible;
+}
+.form__control.error .form__error-text {
+  display: block;
+}
+
+/* Media query */
+@media (max-width: 1200px) {
+  section {
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+  }
+  .headline {
+    text-align: center;
+    padding: 0;
+    width: 80%;
+  }
+  .headline__title {
+    padding-right: 0;
+  }
+  .headline__text {
+    padding-right: 0;
+    margin-bottom: 5rem;
+  }
+}
+
+@media (max-width: 545px) {
+  section {
+    background-image: url(../images/bg-intro-mobile.png);
+  }
+  .form {
+    width: 100%;
+    margin-bottom: 2rem;
+    padding: 1.2rem;
+  }
+  .headline__title {
+    padding-top: 2rem;
+    font-size: 2em;
+  }
+  .form__wrapper {
+    margin: 0 2rem;
+  }
+}
