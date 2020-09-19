@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-family: "Karla", sans-serif;
+  color: #fff;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+:root {
+  --main-Cyan: hsl(179, 62%, 43%);
+  --main-Bright-Yellow: hsl(71, 73%, 54%);
+  --main-Light-Gray: hsl(204, 43%, 93%);
+  --main-Grayish-Blue: hsl(218, 22%, 67%);
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--main-Light-Gray);
+}
+
+.card {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  max-width: 40rem;
+  border-radius: 0.4rem;
+  overflow: hidden;
+}
+
+.card__headline {
+  background-color: #fff;
+  grid-column: 1 / 3;
+  padding: 2.5rem;
+}
+.card__headline h1 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--main-Cyan);
+  margin-bottom: 1.5rem;
+}
+
+.card__headline h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--main-Bright-Yellow);
+  margin-bottom: 1rem;
+}
+
+.card__headline p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--main-Grayish-Blue);
+  line-height: 1.5;
+}
+
+.card__price {
+  background-color: var(--main-Cyan);
+  padding: 2.5rem;
+}
+
+.card__price h3 {
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.card__price div {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.7rem;
+}
+
+.card__price div span {
+  font-size: 0.9rem;
+  font-weight: 300;
+  vertical-align: middle;
+  color: var(--main-Light-Gray);
+  opacity: 0.7;
+}
+.card__price p {
+  font-size: 1em;
+  margin-bottom: 1.5rem;
+}
+
+.card__price button {
+  width: 100%;
+  padding: 0.8rem 0;
+  border-radius: 0.3rem;
+  color: #fff;
+  background-color: var(--main-Bright-Yellow);
+  box-shadow: 0 0 5px rgb(96, 150, 129);
+}
+
+.card__advantages {
+  background-color: hsl(179, 60%, 51%);
+  padding: 2.5rem;
+}
+
+.card__advantages h3 {
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.card__advantages p {
+  font-weight: 500;
+  color: var(--main-Light-Gray);
+  line-height: 1.5;
+  font-size: 0.8rem;
+  width: 70%;
+  opacity: 0.8;
+}
+/* @media */
+
+@media (max-width: 450px) {
+  .card {
+    display: block;
+    margin: 0 2rem;
+  }
+  .card__headline {
+    padding: 1.5rem;
+  }
+  .card__price {
+    padding: 1.5rem;
+  }
+  .card__advantages {
+    padding: 1.5rem;
+  }
+}
