@@ -153,14 +153,14 @@ h6 {
   font-style: italic;
   bottom: -15px;
   left: 1rem;
-  visibility: hidden;
+  display: none;
 }
 
 .form.error input {
   border: 1px solid var(--clr-Light-Red);
 }
 .form.error p {
-  visibility: visible;
+  display: block;
 }
 
 .chart {
@@ -229,5 +229,12 @@ h6 {
   }
   .title {
     font-size: 1.2rem;
+  }
+  .form.error input {
+    margin-bottom: 2rem;
+  }
+  .form p {
+    bottom: 60px;
+    left: 3rem;
   }
 }
