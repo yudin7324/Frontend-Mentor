@@ -33,11 +33,9 @@ body {
   font-size: 14px;
   font-family: "Inter", sans-serif;
   color: var(--clr-White-Text);
-  height: 100vh;
-  background-color: var(--clr-bg);
   transition: all 0.3s;
   position: relative;
-  z-index: -2;
+  z-index: 0;
 }
 input,
 button,
@@ -105,7 +103,7 @@ h6 {
   --clr-hover: #394166;
 }
 
-.dark {
+.light {
   /* light theme */
   --clr-bg: hsl(0, 0%, 100%);
   --clr-Top-bg: hsl(225, 100%, 98%);
@@ -159,6 +157,11 @@ h6 {
   border-bottom-left-radius: 2rem;
   border-bottom-right-radius: 2rem;
   z-index: -1;
+}
+.dashboard {
+  background-color: var(--clr-bg);
+  z-index: -2;
+  position: relative;
 }
 
 .container {
@@ -361,6 +364,9 @@ h6 {
 }
 
 @media (max-width: 900px) {
+  .bg-top {
+    height: 20vh;
+  }
   .container {
     max-width: 50%;
   }
@@ -368,7 +374,7 @@ h6 {
     display: block;
   }
   .header-headline {
-    margin-bottom: 1rem;
+    margin: 1rem 0;
   }
   .header-button {
     padding-top: 1rem;
