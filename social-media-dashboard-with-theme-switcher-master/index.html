@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Frontend Mentor | [Challenge Name Here]</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header class="header">
+            <div class="header-headline">
+                <h1 class="header__title">Social Media Dashboard</h1>
+                <p class="header__subtitle">Total Followers: 23,004</p>
+            </div>
+            <div class="header-button">
+                <div class="header-button__text">Dark Mode</div>
+                <input class="header__checkbox" type="checkbox" id="checkbox">
+                <label for="checkbox" class="label">
+                    <div class="ball"></div>
+                </label>
+            </div>
+        </header>
+
+        <!-- Social cards ============================== -->
+        <div class="social">
+
+            <div class="social__item facebook" id="social">
+                <a class="social__item-link" href="#">
+                    <img src="images/icon-facebook.svg" alt="fb-icon">
+                    @nathanf
+                </a>
+                <div class="social__item-followers">1987</div>
+                <span>Followers</span>
+                <div class="social__item-stat up">
+                    <img src="images/icon-up.svg" alt="up">12 Today</div>
+            </div>
+
+            <div class="social__item twitter">
+                <a class="social__item-link" href="#">
+                    <img src="images/icon-twitter.svg" alt="tt-icon">
+                    @nathanf
+                </a>
+                <div class="social__item-followers">1044</div>
+                <span>Followers</span>
+                <div class="social__item-stat up">
+                    <img src="images/icon-up.svg" alt="">99 Today</div>
+            </div>
+
+            <div class="social__item instagram">
+                <a class="social__item-link" href="#">
+                    <img src="images/icon-instagram.svg" alt="inst-icon">
+                    @realnathanf
+                </a>
+                <div class="social__item-followers">11k</div>
+                <span>Followers</span>
+                <div class="social__item-stat up">
+                    <img src="images/icon-up.svg" alt="">1099 Today</div>
+            </div>
+
+            <div class="social__item youtube">
+                <a class="social__item-link" href="#">
+                    <img src="images/icon-youtube.svg" alt="yt-icon">
+                    Nathan F.
+                </a>
+                <div class="social__item-followers">8239</div>
+                <span>Followers</span>
+                <div class="social__item-stat down">
+                    <img src="images/icon-down.svg" alt="">144 Today</div>
+            </div>
+
+        </div>
+
+        <h2 class="overview-title">Overview - Today</h2>
+        <!-- Statistic cards =========================== -->
+        <div class="statistic">
+
+            <div class="statistic__item">
+                <div class="statistic__item-title">Page Views</div>
+                <img class="statistic__item-img" src="images/icon-facebook.svg" alt="fb-icon">
+                <div class="statistic__item-score">87</div>
+                <div class="statistic__item-arrow up"><img src="images/icon-up.svg" alt="up">3%</div>
+            </div>
+
+            <div class="statistic__item">
+                <div class="statistic__item-title">Likes</div>
+                <img class="statistic__item-img" src="images/icon-facebook.svg" alt="fb-icon">
+                <div class="statistic__item-score">52</div>
+                <div class="statistic__item-arrow down"><img src="images/icon-down.svg" alt="down">2%</div>
+            </div>
+
+            <div class="statistic__item">
+                <div class="statistic__item-title">Likes</div>
+                <img class="statistic__item-img" src="images/icon-instagram.svg" alt="inst-icon">
+                <div class="statistic__item-score">5462</div>
+                <div class="statistic__item-arrow up"><img src="images/icon-up.svg" alt="down">2257%</div>
+            </div>
+
+            <div class="statistic__item">
+                <div class="statistic__item-title">Profile Views</div>
+                <img class="statistic__item-img" src="images/icon-instagram.svg" alt="inst-icon">
+                <div class="statistic__item-score">52k</div>
+                <div class="statistic__item-arrow up"><img src="images/icon-up.svg" alt="down">1375%</div>
+            </div>
+
+            <div class="statistic__item">
+                <div class="statistic__item-title">Retweets</div>
+                <img class="statistic__item-img" src="images/icon-twitter.svg" alt="tt-icon">
+                <div class="statistic__item-score">117</div>
+                <div class="statistic__item-arrow up"><img src="images/icon-up.svg" alt="down">303%</div>
+            </div>
+
+            <div class="statistic__item">
+                <div class="statistic__item-title">Likes</div>
+                <img class="statistic__item-img" src="images/icon-twitter.svg" alt="tt-icon">
+                <div class="statistic__item-score">507</div>
+                <div class="statistic__item-arrow up"><img src="images/icon-up.svg" alt="down">553%</div>
+            </div>
+
+            <div class="statistic__item">
+                <div class="statistic__item-title">Likes</div>
+                <img class="statistic__item-img" src="images/icon-youtube.svg" alt="yt-icon">
+                <div class="statistic__item-score">107</div>
+                <div class="statistic__item-arrow down"><img src="images/icon-down.svg" alt="down">19%</div>
+            </div>
+
+            <div class="statistic__item">
+                <div class="statistic__item-title">Total Views</div>
+                <img class="statistic__item-img" src="images/icon-youtube.svg" alt="yt-icon">
+                <div class="statistic__item-score">1407</div>
+                <div class="statistic__item-arrow down"><img src="images/icon-down.svg" alt="down">12%</div>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- bg top-line -->
+    <div class="bg-top"></div>
+    <!-- bg top line -->
+
+    <!-- Script JS ==================================-->
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
