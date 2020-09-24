@@ -114,21 +114,22 @@ svg path {
 .header__menu a:hover {
   color: var(--clr-Very-Dark-Violet);
 }
-.header__menu-button {
+.header__menu a:last-child {
   border: 2px solid var(--clr-Very-Dark-Violet);
   color: var(--clr-Very-Dark-Violet);
-}
-.header__menu-button.btn:hover {
-  background-color: var(--clr-Very-Dark-Violet);
-  color: #fff;
-}
-.btn {
   font-size: 0.8em;
   padding: 0.4rem 1.5rem;
   text-transform: uppercase;
 }
+.header__menu a:last-child:hover {
+  background-color: var(--clr-Very-Dark-Violet);
+  color: #fff;
+}
 /* HEADER BURGER ========== */
-
+.header.fixed {
+  position: fixed;
+  width: 100%;
+}
 .header__burger {
   height: 32px;
   width: 32px;
@@ -137,6 +138,38 @@ svg path {
   background-position: center;
   background-size: contain;
   display: none;
+}
+.header__burger.close {
+  background-image: url(../images/icon-close.svg);
+  transition: all 0.3s ease-in-out;
+}
+
+.active {
+  display: block;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  right: 0;
+  background-color: var(--clr-Dark-Violet);
+  font-size: 1.4rem;
+  height: 100%;
+  z-index: 100;
+  position: fixed;
+}
+.header__menu.active a {
+  display: block;
+  margin: 2rem 4rem;
+  color: #fff;
+}
+.header__menu a.active {
+  position: relative;
+  top: 0;
+  border: 2px solid #fff;
+  color: #fff;
+  font-size: 0.8em;
+  height: 40px;
+  padding: 0.4rem 0;
+  text-transform: uppercase;
 }
 
 /* INTRO ========== */
@@ -184,7 +217,7 @@ svg path {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 10;
+  z-index: 2;
 }
 .intro__headline-text {
   font-size: 0.9em;
@@ -209,6 +242,8 @@ svg path {
   color: var(--clr-Very-Light-Gray);
   font-weight: 700;
   transition: all 0.2s linear;
+  font-size: 0.8em;
+  padding: 0.4rem 1.5rem;
 }
 .intro__button:hover {
   border: 2px solid #fff;
@@ -238,7 +273,7 @@ svg path {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 10;
+  z-index: 2;
 }
 .about__content {
   display: flex;
@@ -290,6 +325,8 @@ svg path {
   margin-right: 4rem;
   transition: all 0.2s linear;
   font-weight: 700;
+  font-size: 0.8em;
+  padding: 0.4rem 1.5rem;
 }
 .work__button:hover {
   border: 2px solid #fff;
@@ -453,6 +490,9 @@ svg path {
   .header__menu {
     display: none;
   }
+  .header__menu.active {
+    display: block;
+  }
   .header__burger {
     display: block;
   }
@@ -503,6 +543,14 @@ svg path {
   .footer__bottom a {
     font-size: 0.7em;
     margin-bottom: 0.5rem;
+  }
+}
+@media (min-width: 767px) {
+  .header__menu.active {
+    display: none;
+  }
+  .header__burger {
+    display: none;
   }
 }
 @media (max-width: 575px) {
