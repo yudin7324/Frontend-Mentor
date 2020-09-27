@@ -1,1 +1,1 @@
-https://github.com/IYDoe/Frontend-Mentor/tree/master/project-tracking-intro-component-master
+https://iydoe.github.io/Frontend-Mentor/project-tracking-intro-component-master/
