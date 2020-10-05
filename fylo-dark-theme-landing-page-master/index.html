@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Frontend Mentor | Fylo landing page with dark theme and features grid</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- HEADER ============================= -->
+    <header class="header">
+        <figure class="header__logo">
+            <img src="images/logo.svg" alt="logo">
+        </figure>
+        <nav class="header__menu">
+            <a href="#">Features</a>
+            <a href="#">Team</a>
+            <a href="#">Sign In</a>
+        </nav>
+    </header>
+    <!-- INTRO ============================== -->
+    <section class="intro">
+        <figure class="intro__image">
+            <img src="images/illustration-intro.png" alt="intro-img">
+        </figure>
+        <h1 class="intro__title">All your files in one secure location, accessible anywhere.</h1>
+        <p class="intro__text">Fylo stores all your most important files in one secure location. Access them wherever
+            you need, share and collaborate with friends family, and co-workers.</p>
+        <a class="intro__btn" href="#">Get Started</a>
+    </section>
+    <!-- FEATURES =========================== -->
+    <section class="features">
+
+        <article class="features__column">
+            <img class="features__column-img" src="images/icon-access-anywhere.svg" alt="icon">
+            <h3 class="features__column-title">Access your files, anywhere</h3>
+            <p class="features__column-text">
+                The ability to use a smartphone, tablet, or computer to access your
+                account means your
+                files follow you everywhere.</p>
+        </article>
+
+        <article class="features__column">
+            <img class="features__column-img" src="images/icon-security.svg" alt="icon">
+            <h3 class="features__column-title">Security you can trust</h3>
+            <p class="features__column-text">2-factor authentication and user-controlled encryption are just a couple
+                of the security
+                features we allow to help secure your files.</p>
+        </article>
+
+        <article class="features__column">
+            <img class="features__column-img" src="images/icon-collaboration.svg" alt="icon">
+            <h3 class="features__column-title">Real-time collaboration</h3>
+            <p class="features__column-text">Securely share files and folders with friends, family and colleagues for
+                live collaboration.
+                No email attachments required.</p>
+        </article>
+
+        <article class="features__column">
+            <img class="features__column-img" src="images/icon-any-file.svg" alt="icon">
+            <h3 class="features__column-title">Store any type of file</h3>
+            <p class="features__column-text">Whether you're sharing holidays photos or work documents, Fylo has you
+                covered allowing for all
+                file types to be securely stored and shared.</p>
+        </article>
+
+    </section>
+    <!-- WORK =============================== -->
+    <section class="work">
+        <figure class="work__image">
+            <img src="images/illustration-stay-productive.png" alt="stay-productive">
+        </figure>
+        <article class="work__content">
+            <h2 class="work__title">Stay productive, wherever you are</h2>
+            <p class="work__text">Never let location be an issue when accessing your files. Fylo has you covered for all
+                of your file
+                storage needs.</p>
+            <p class="work__text">Securely share files and folders with friends, family and colleagues for live
+                collaboration. No email
+                attachments required.</p>
+            <a class="work__link" href="#">See how Fylo works</a>
+        </article>
+    </section>
+    <!-- TEAM =============================== -->
+    <div class="team">
+        <!-- Card #1 -->
+        <div class="team-card">
+            <p class="team-card__text">Fylo has improved our team productivity by an order of magnitude. Since making
+                the switch our team has
+                become a well-oiled collaboration machine.</p>
+            <div class="team-card__frame">
+                <img src="images/profile-1.jpg" alt="">
+                <div class="team-card__frame-info">
+                    <div class="team-card__frame-info-name">Satish Patel</div>
+                    <div class="team-card__frame-info-prof">Founder & CEO, Huddle</div>
+                </div>
+            </div>
+        </div>
+        <!-- Card #2 -->
+        <div class="team-card">
+            <p class="team-card__text">Fylo has improved our team productivity by an order of magnitude. Since making
+                the switch our team has
+                become a well-oiled collaboration machine.</p>
+            <div class="team-card__frame">
+                <img src="images/profile-2.jpg" alt="">
+                <div class="team-card__frame-info">
+                    <div class="team-card__frame-info-name">Bruce McKenzie
+                    </div>
+                    <div class="team-card__frame-info-prof">Founder & CEO, Huddle</div>
+                </div>
+            </div>
+        </div>
+        <!-- card #3 -->
+        <div class="team-card">
+            <p class="team-card__text">Fylo has improved our team productivity by an order of magnitude. Since making
+                the switch our team has
+                become a well-oiled collaboration machine.</p>
+            <div class="team-card__frame">
+                <img src="images/profile-3.jpg" alt="">
+                <div class="team-card__frame-info">
+                    <div class="team-card__frame-info-name">Iva Boyd
+                    </div>
+                    <div class="team-card__frame-info-prof">Founder & CEO, Huddle</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- SUBSCRIBE ========================== -->
+    <section class="subscribe">
+        <h2 class="subscribe__title">Get early access today</h2>
+        <p class="subscribe__text">It only takes a minute to sign up and our free starter tier is extremely generous. If
+            you have any
+            questions, our support team would be happy to help you.</p>
+        <form class="subscribe__form" action="">
+            <input type="email" placeholder="email@example.com">
+            <button>Get Started For Free</button>
+        </form>
+    </section>
+    <!-- FOOTER ============================= -->
+    <footer class="footer">
+        <figure class="footer__logo">
+            <img src="images/logo.svg" alt="logo">
+        </figure>
+
+        <div class="footer__inner">
+            <div class="footer__inner-contacts">
+                <ul>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et
+                        dolore magna aliqua</li>
+                    <li>+1-543-123-4567</li>
+                    <li>example@fylo.com</li>
+                </ul>
+            </div>
+
+            <div class="footer__inner-links">
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Jobs</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__inner-social">
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
