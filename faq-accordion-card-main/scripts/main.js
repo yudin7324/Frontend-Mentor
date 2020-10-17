@@ -1,16 +1,3 @@
-// const acc = document.getElementsByClassName("accordion__btn");
-// let i;
-
-// for (i = 0; i < acc.length; i++) {
-//     acc[i].onclick = function () {
-//         this.classList.toggle("active");
-
-//         this.nextElementSibling.classList.toggle("show");
-//     }
-// }
-
-
-
 (function ($) {
 
     $('.accordion h3').click(function (j) {
